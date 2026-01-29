@@ -1,10 +1,13 @@
 import React, { useState } from 'react'
 
 const App = () => {
-  const marks = [88,76,90,67,28];
-  let [num,setNum] = useState(0)
-  function graceStudent(){
-    console.log("de diya grace");
+  const [marks,setMarks]=useState([88,76,90,67,28])
+ 
+  function graceStudent(elem){
+    const newMarks = marks.map(function(elem){
+      return elem + 5;
+    })
+    setMarks(newMarks)
   }
   return (
     <div>
