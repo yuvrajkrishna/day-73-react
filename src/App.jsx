@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 const App = () => {
-  const [marks,setMarks]=useState([88,76,90,67,28])
+  const [marks,setMarks]=useState([30,76,12,67,28])
  
   function graceStudent(elem){
     const newMarks = marks.map(function(elem){
@@ -13,7 +13,7 @@ const App = () => {
     <div>
       {
         marks.map(function(elem,idx){
-          return <h1 key={idx}>Student  {idx+1} = {elem}</h1>
+          return <h1 key={idx}>Student  {idx+1} = {elem} ({elem>30?'PASS':'FAIL'})</h1>
         })
         
       }
