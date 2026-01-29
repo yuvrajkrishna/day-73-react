@@ -19,4 +19,40 @@ button{
   margin-top: 40px;
   border-radius: 5px;
   border: none;
+  cursor: pointer;
+  transform: button ease 0.5s;
+  margin-bottom: 40px;
+}
+
+button:hover{
+  scale: 0.95;
+  
+}
+
+div{
+  padding: 10px;
+  font-family: 'Poppins ';
+  
+}
+
+.Women{
+  width: fit-content;
+  padding: 20px 40px;
+  font-size: 30px;
+  font-weight: 600;
+  background-color: rgb(235, 91, 115);
+  color: white;
+  border-radius: 10px;
+
+}
+
+.Men{
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: fit-content;
+  padding: 20px 40px;
+  font-size: 30px;
+  font-weight: 600;
+  background-color:lightskyblue;
+  color: white;
 }
