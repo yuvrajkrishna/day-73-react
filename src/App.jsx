@@ -5,7 +5,12 @@ const App = () => {
  
   function graceStudent(elem){
     const newMarks = marks.map(function(elem){
-      return elem + 5;
+      if(elem <= 30){
+        return elem+5
+      }
+      else{
+        return elem;
+      }
     })
     setMarks(newMarks)
   }
