@@ -10,8 +10,13 @@ html,body {
   background-color: black;
   color: white;
   font-size: 2vmax;
+  padding: 10px;
 }
 button{
-  font-size: 1.5vmax;
+  color: white;
+  background-color: lightseagreen;
+  padding: 15px 30px;
   margin-top: 40px;
+  border-radius: 5px;
+  border: none;
 }

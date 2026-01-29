@@ -1,19 +1,20 @@
 import React, { useState } from 'react'
 
 const App = () => {
-  const arr = ['sarthak','harsh','sharda','ankit'];
+  const marks = [88,76,90,67,28];
   let [num,setNum] = useState(0)
+  function graceStudent(){
+    console.log("de diya grace");
+  }
   return (
     <div>
-      <h1>{arr[num]}</h1>
-      <button onClick={()=>{
-        if(num<arr.length-1){
-        setNum(num+1);
-        }
-        else{
-          setNum(num=0);
-        }
-      }}>change user</button>
+      {
+        marks.map(function(elem,idx){
+          return <h1 key={idx}>Student  {idx+1} = {elem}</h1>
+        })
+        
+      }
+      <button onClick={graceStudent}>Give them grace</button>
     </div>
   )
 }
